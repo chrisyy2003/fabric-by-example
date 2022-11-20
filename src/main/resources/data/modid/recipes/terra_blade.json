@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " W ",
+    " W ",
+    " R "
+  ],
+  "key": {
+    "W": {
+      "item": "modid:demonite_bar"
+    },
+    "R": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "modid:terra_blade"
+  }
+}

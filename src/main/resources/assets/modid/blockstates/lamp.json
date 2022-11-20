@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": { "model": "modid:block/demonite_block" }
+    "light_on=true": { "model": "modid:block/lamp_on" },
+    "light_on=false": { "model": "modid:block/lamp_off" }
   }
 }
