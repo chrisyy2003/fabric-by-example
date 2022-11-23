@@ -14,11 +14,12 @@ function HomepageHeader() {
         <div className="container">
           <h1 className={clsx('hero__title', styles.heroTitle)}>Fabric by Example</h1>
           {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+          <br/>
           <div className={styles.buttons}>
             <Link
               className="button button--secondary button--lg"
               to="/docs/intro">
-              Get Start with Fabric - 5min ⏱️
+              Get start with Fabric - 5min ⏱️
             </Link>
           </div>
         </div>
