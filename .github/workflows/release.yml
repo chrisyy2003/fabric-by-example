@@ -1,0 +1,10 @@
+steps:
+- uses: actions/checkout@v2
+
+- uses: actions/download-artifact@v3
+  with:
+    name: build/lib/Artifacts
+    
+- name: Display structure of downloaded files
+  run: ls -R
+
