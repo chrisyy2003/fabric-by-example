@@ -52,6 +52,6 @@ jobs:
           
       - name: release to github
         uses: softprops/action-gh-release@v1
-        tag_name: test
         with:
+          tag_name: test
           files: build/libs/fabric-by-example-mod-1.0.0.jar
