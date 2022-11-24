@@ -40,3 +40,15 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v3
+        with:
+            name: Artifacts
+            path: build/libs/
+          
+      - name: Display structure of downloaded files
+        run: ls -R
