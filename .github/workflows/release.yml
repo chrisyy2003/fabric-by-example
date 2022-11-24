@@ -3,7 +3,8 @@
 name: Release
 on:
   workflow_run:
-    workflows: [Build Java]
+    workflows: 
+      - Build Java
     types:
       - completed
 
@@ -16,7 +17,8 @@ jobs:
 
     - uses: actions/download-artifact@v3
       with:
-        name: build/lib/Artifacts
+          name: Artifacts
+          path: build/libs/
         
     - name: Display structure of downloaded files
       run: ls -R
