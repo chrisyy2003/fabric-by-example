@@ -50,5 +50,7 @@ jobs:
             name: Artifacts
             path: build/libs/
           
-      - name: Display structure of downloaded files
-        run: ls -R
+      - name: release to github
+        uses: softprops/action-gh-release@v1
+        with:
+          files: build/libs/fabric-by-example-mod-1.0.0.jar
